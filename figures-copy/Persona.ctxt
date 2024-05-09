@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Persona
+comment0.text=\r\n\ Clase\ base\ sobre\ la\ que\ construir\ nuevas\ clase\ que\ cumplan\r\n\ los\ distintos\ roles\ de\ la\ aplicacion\r\n
+comment1.params=
+comment1.target=Persona()
+comment10.params=telefono
+comment10.target=void\ setTelefono(java.lang.String)
+comment11.params=
+comment11.target=java.util.Date\ getFechaNacimiento()
+comment2.params=nombre\ apellidos\ year\ month\ day\ telefono
+comment2.target=Persona(java.lang.String,\ java.lang.String,\ int,\ int,\ int,\ java.lang.String)
+comment2.text=\r\n\ Constructor\ for\ objects\ of\ class\ Persona\r\n
+comment3.params=
+comment3.target=java.lang.String\ getNombre()
+comment4.params=nombre
+comment4.target=void\ setNombre(java.lang.String)
+comment5.params=
+comment5.target=java.lang.String\ getApellidos()
+comment6.params=apellidos
+comment6.target=void\ setApellidos(java.lang.String)
+comment7.params=
+comment7.target=java.lang.String\ getDNI()
+comment8.params=dni
+comment8.target=void\ setDNI(java.lang.String)
+comment9.params=
+comment9.target=java.lang.String\ getTelefono()
+numComments=12

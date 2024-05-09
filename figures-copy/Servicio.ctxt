@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Servicio
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Servicio\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Servicio()
+comment2.params=
+comment2.target=void\ gerencia()
+comment3.params=
+comment3.target=void\ medico()
+comment4.params=
+comment4.target=void\ enfermeria()
+numComments=5

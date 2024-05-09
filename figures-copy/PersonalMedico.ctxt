@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=PersonalMedico
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ PersonalMedico\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=nombre\ apellidos\ anyo\ mes\ dia\ telefono\ cargo
+comment1.target=PersonalMedico(java.lang.String,\ java.lang.String,\ int,\ int,\ int,\ java.lang.String,\ TipoEmpleado)
+comment2.params=
+comment2.target=Agenda\ getAgenda()
+comment3.params=agenda
+comment3.target=void\ setAgenda(Agenda)
+comment4.params=p\ s
+comment4.target=void\ actualizarExpediente(Paciente,\ java.lang.String)
+numComments=5
