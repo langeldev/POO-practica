@@ -12,9 +12,9 @@ public class Medico extends PersonalMedico
     /**
      * Constructor for objects of class Medico
      */
-    public Medico(String nombre, String apellidos, int anyo,int mes, int dia,String telefono)
+    public Medico(String nombre, String apellidos, String fechaNac,String telefono)
     {
-        super(nombre, apellidos,anyo, mes, dia, telefono, TipoEmpleado.MEDICO);
+        super(nombre, apellidos, fechaNac, telefono, TipoEmpleado.MEDICO);
     }
     
     public Especialidad getEspecialidad()

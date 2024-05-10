@@ -11,9 +11,9 @@ public abstract class PersonalNoMedico extends Personal
     /**
      * Constructor for objects of class PersonalNoMedico
      */
-    public PersonalNoMedico(String nombre, String apellidos, int anyo,int mes, int dia, String telefono, TipoEmpleado cargo)
+    public PersonalNoMedico(String nombre, String apellidos, String fechaNac, String telefono, TipoEmpleado cargo)
     {
-        super(nombre, apellidos,anyo, mes, dia, telefono, cargo); 
+        super(nombre, apellidos,fechaNac, telefono, cargo); 
     }
     
 

@@ -15,9 +15,9 @@ public abstract class Personal extends Persona
     /**
      * Constructor for objects of class Empleado
      */
-    public Personal(String nombre, String apellidos, int anyo,int mes, int dia, String telefono, TipoEmpleado cargo)
+    public Personal(String nombre, String apellidos,String fechaNac, String telefono, TipoEmpleado cargo)
     {
-        super(nombre, apellidos, anyo, mes, dia, telefono);
+        super(nombre, apellidos, fechaNac, telefono);
         this.ID = contador++;
         this.cargo = cargo;
     }

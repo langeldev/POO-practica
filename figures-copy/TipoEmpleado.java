@@ -1,6 +1,6 @@
 
 /**
- * Enumeration class Tipo - write a description of the enum class here
+ * Enumera los disntintos cargos que hay dentro del hospital
  * 
  * @author (your name here)
  * @version (version number or date here)

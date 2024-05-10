@@ -8,8 +8,8 @@
 public class Enfermero extends PersonalMedico
 {
     
-    public Enfermero(String nombre, String apellidos, int anyo,int mes, int dia, String telefono)
+    public Enfermero(String nombre, String apellidos, String fechaNac, String telefono)
     {
-        super(nombre, apellidos, anyo, mes, dia, telefono, TipoEmpleado.ENFERMERO);
+        super(nombre, apellidos, fechaNac, telefono, TipoEmpleado.ENFERMERO);
     }
 }

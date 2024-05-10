@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.time.LocalDate;
 
 /**
  * clase 
@@ -41,5 +42,9 @@ public class Util
            sc.nextLine();
            return "";
         }
+    }
+    
+    public static LocalDate dateParser(String date) {
+        return LocalDate.parse(date);
     }
 }

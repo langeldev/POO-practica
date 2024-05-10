@@ -1,6 +1,5 @@
-import java.util.Date;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 /**
  * Write a description of class Cita here.
@@ -12,9 +11,10 @@ public class Cita
 {
     // instance variables - replace the example below with your own
     private Paciente paciente;
-    private Date fecha; 
     private PersonalMedico empleado;
-    private String hora;
+    private Unidad unidad;
+    private LocalDate fecha; 
+    private LocalTime hora;
     private modoCita modoCita;
     
     public static enum modoCita {PRESENCIAL, TELEFONO}
@@ -22,23 +22,14 @@ public class Cita
     /**
      * Constructor for objects of class Cita
      */
-    public Cita(Paciente paciente, PersonalMedico empleado, String fecha, String hora, modoCita modoCita)
+    public Cita(PersonalMedico empleado, Paciente paciente,Unidad unidad, LocalDate fecha, LocalTime hora, modoCita modoCita)
     {
-        // initialise instance variables
+        this.empleado = empleado;      
         this.paciente = paciente;
-        this.empleado = empleado;
-        Date fechaActual = Date.now();
-        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
-        try
-        {
-            this.fecha =  formato.parse(fecha);
-        }
-        catch (java.text.ParseException pe)
-        {
-            pe.printStackTrace();
-        }
+        this.unidad = unidad;
+        this.fecha = fecha;
+        this.hora = hora;
         this.modoCita = modoCita;
-        
     }
 
     public Paciente getPaciente()
@@ -51,20 +42,32 @@ public class Cita
         this.paciente = paciente;    
     }
     
-    public Date getFecha()
+    public LocalDate getFecha()
     {
         return this.fecha;
     }
     
-    public void setFecha(Date fecha)
+    public void setFecha(LocalDate fecha)
     {
         this.fecha = fecha;
     }
     
+      public LocalTime getHora()
+    {
+        return this.hora;
+    }
+    
+    public void setFecha(LocalTime hora)
+    {
+        this.hora = hora;
+    }
+    
+    
     @Override
     public String toString() {
         return this.paciente.getNombre() + " " + this.paciente.getApellidos()  
-        + "tiene cita " +this.modoCita  + " con " + this.empleado.getNombre() + " " + this.empleado.getApellidos()
-        + " el dia " + this.fecha + " a las " + this.hora;
+        + "\ntiene cita " +this.modoCita  + " con " + this.empleado.getCargo() + " " + this.empleado.getNombre() + " " + this.empleado.getApellidos()
+        + "\nen la unidad de " + this.unidad.getNombre()
+        + "\n el dia " + this.fecha + " a las " + this.hora;
     }
 }

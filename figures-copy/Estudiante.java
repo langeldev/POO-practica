@@ -10,9 +10,9 @@ public class Estudiante extends Persona
     private PersonalMedico empleadoAsignado;
     private static int contador = 1;
     private final int ID;
-    public Estudiante(String nombre, String apellidos,int anyo,int mes, int dia, String telefono, PersonalMedico empleado)
+    public Estudiante(String nombre, String apellidos,String fechaNac, String telefono, PersonalMedico empleado)
     {
-        super(nombre, apellidos, anyo, mes, dia, telefono);
+        super(nombre, apellidos, fechaNac, telefono);
         this.ID = contador++;
         this.empleadoAsignado = empleado;
     }
