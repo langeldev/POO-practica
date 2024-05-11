@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=PersonalMedico
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ PersonalMedico\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=nombre\ apellidos\ fechaNac\ telefono\ cargo
+comment1.target=PersonalMedico(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ enumerados.TipoEmpleado)
+comment2.params=
+comment2.target=java.util.List\ getAgenda()
+comment3.params=agenda
+comment3.target=void\ setAgenda(java.util.ArrayList)
+comment4.params=
+comment4.target=void\ deleteAgenda()
+comment5.params=cita
+comment5.target=void\ addCita(utiles.Cita)
+comment6.params=fecha
+comment6.target=void\ printCitasFecha(java.time.LocalDate)
+comment7.params=fecha\ hora
+comment7.target=boolean\ citaOcupada(java.lang.String,\ java.lang.String)
+comment7.text=\r\n\ metodo\ que\ comprueba\ si\ existe\ la\ hora\ esta\ ocupada\r\n\ @params\ fecha\r\n\ @return\ true\ si\ est\u00E1\ encuentra\ coincidencia\ de\ fecha\ y\ hora\r\n
+comment8.params=p\ s
+comment8.target=void\ actualizarExpediente(Paciente,\ java.lang.String)
+numComments=9

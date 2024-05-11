@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=ServiciosGenerales
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ ServiciosGenerales\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=nombre\ apellidos\ fechaNac\ telefono
+comment1.target=void\ crearPaciente(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=nombre\ apellidos\ fechaNac\ telefono\ pm
+comment2.target=void\ crearPaciente(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ personas.PersonalMedico)
+comment3.params=tipo\ nombre\ apellidos\ fechaNac\ telefono
+comment3.target=void\ crearEmpleado(enumerados.TipoEmpleado,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment4.params=paciente\ hab
+comment4.target=void\ hospitalizar(personas.Paciente,\ unidades.Habitacion)
+comment5.params=paciente\ pm\ ce\ fecha\ hora\ modoCita
+comment5.target=void\ crearCita(personas.Paciente,\ personas.PersonalMedico,\ unidades.Unidad,\ java.lang.String,\ java.lang.String,\ utiles.Cita.modoCita)
+numComments=6

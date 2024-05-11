@@ -1,3 +1,5 @@
+import utiles.*;
+
 /**
  * Clase principal encargada de abrir la aplicación
  * 
