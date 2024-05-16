@@ -3,6 +3,8 @@ package utiles;
 import java.util.Scanner;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.text.SimpleDateFormat;
+import java.text.DateFormat;
 
 /**
  * clase 
@@ -47,14 +49,22 @@ public class Util
         }
     }
     
+    /**
+     * Cambia el tipo del dato 
+     * @param String fecha
+     */
     public static LocalDate dateParser(String date) {
-        return LocalDate.parse(date);
+         LocalDate dato = null;
+        try {
+            dato = LocalDate.parse(date);
+        } catch (Exception e){
+            System.out.println("Formato incorrecto: yyyy-MM-dd");
+        }
+        return dato;
     }
     
     public static LocalTime hourParser(String hour) {
         return LocalTime.parse(hour);
     }
-    
-    
-    
+       
 }

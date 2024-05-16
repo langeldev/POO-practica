@@ -1,15 +1,17 @@
-package utiles;
+package servicios;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 
 import personas.*;
 import unidades.*;
+import utiles.Util;
+import enumerados.ModoCita;
 /**
- * Write a description of class Cita here.
+ * Clase Cita.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Las citas son para un pacientes vea a alguien del petonal sanitario en una unidad
+ * a una fecha y hora determinada, pueden ser presencial o por telefono
  */
 public class Cita
 {
@@ -18,14 +20,12 @@ public class Cita
     private Unidad unidad;
     private LocalDate fecha; 
     private LocalTime hora;
-    private modoCita modoCita;
+    private ModoCita modoCita;
     
-    public static enum modoCita {PRESENCIAL, TELEFONO}
-
     /**
-     * Constructor for objects of class Cita
+     * Constructor class Cita
      */
-    public Cita(Paciente paciente, PersonalMedico empleado, Unidad unidad, String fecha, String hora, modoCita modoCita)
+    public Cita(Paciente paciente, PersonalMedico empleado, Unidad unidad, String fecha, String hora, ModoCita modoCita)
     {
         this.empleado = empleado;      
         this.paciente = paciente;
@@ -34,7 +34,8 @@ public class Cita
         this.hora = Util.hourParser(hora);
         this.modoCita = modoCita;
     }
-
+    
+    //getters y setters
     public Paciente getPaciente()
     {
         return this.paciente;
@@ -43,6 +44,26 @@ public class Cita
     public void setPaciente(Paciente paciente)
     {
         this.paciente = paciente;    
+    }
+      
+    public PersonalMedico getPersonal()
+    {
+        return this.empleado;
+    }
+    
+    public void setPersonal(PersonalMedico empleado)
+    {
+        this.empleado = empleado;    
+    }
+    
+    public Unidad getUnidad()
+    {
+        return this.unidad;
+    }
+    
+    public void setUnidad(Unidad unidad)
+    {
+        this.unidad = unidad;    
     }
     
     public LocalDate getFecha()
@@ -66,8 +87,9 @@ public class Cita
     }
     
     /**
-     * metodo que comprueba si existe la hora esta ocupada
-     * @params fecha
+     * Comprueba si existe la hora y la fecha
+     * @params String fecha 
+     * @param String hora 
      * @return true si está encuentra coincidencia de fecha y hora
      */
     public boolean isOcupada(String fecha, String hora) 
@@ -77,12 +99,12 @@ public class Cita
         return fechaNueva.equals(this.fecha) && horaNueva.equals(this.hora);
     }
     
-    
     @Override
     public String toString() {
-        return this.paciente.getNombre() + " " + this.paciente.getApellidos()  
+        return "----------------------------------------------\n"
+        + this.paciente.getNombre() + " " + this.paciente.getApellidos()  
         + "\ntiene cita " +this.modoCita  + " con " + this.empleado.getCargo() + " " + this.empleado.getNombre() + " " + this.empleado.getApellidos()
         + "\nen la unidad de " + this.unidad.getNombre()
-        + "\n el dia " + this.fecha + " a las " + this.hora;
+        + "\nel dia " + this.fecha + " a las " + this.hora;
     }
 }

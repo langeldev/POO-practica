@@ -3,7 +3,7 @@ package personas;
 import java.util.ArrayList;
 import java.util.List;
 import unidades.Habitacion;
-import utiles.Cita;
+import servicios.Cita;
 
 /**
  * Write a description of class Paciente here.
@@ -21,10 +21,10 @@ public class Paciente extends Persona
     
     /**
      * Constructor for objects of class Paciente
-     */
-    public Paciente(String nombre, String apellidos,String fechaNac, String telefono)
+     */  
+    public Paciente(String nombre, String apellidos,String fechaNac, String telefono, String dni)
     {
-        super(nombre, apellidos, fechaNac, telefono);
+        super(nombre, apellidos, fechaNac, telefono, dni);
         this.ID = contador++;  
         this.expediente = new ArrayList();
         this.citas = new ArrayList();
@@ -40,7 +40,7 @@ public class Paciente extends Persona
         this.habitacion = habitacion; 
     }
     
-    public Habitacion getHabitcion()
+    public Habitacion getHabitacion()
     {
         return this.habitacion;
     }
@@ -48,6 +48,11 @@ public class Paciente extends Persona
     public boolean isHospitalizado()
     {
         return this.habitacion != null;
+    }
+    
+    public void darAlta()
+    {
+        this.habitacion = null;
     }
     
     public List<String> getExpediente()
@@ -94,6 +99,9 @@ public class Paciente extends Persona
     
     @Override
     public String toString() {
-        return this.getID() + " " + super.getNombre() + " " + super.getApellidos();
+       return "------------------------------------------------"
+        + "\nID: "+this.ID +  "\nDNI: " + super.getDNI()
+        +"\nNombre: " +super.getNombre() + "\nApellidos: " + super.getApellidos()
+        + "\nFecha Nacimiento: " + this.getFechaNacimiento();
     }
 }

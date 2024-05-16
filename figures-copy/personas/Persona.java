@@ -17,21 +17,29 @@ public abstract class Persona
     protected String apellidos;
     protected LocalDate fechaNacimiento;
     protected String telefono;
+    protected String dni;
     
     public Persona() {}
 
     /**
-     * Constructor for objects of class Persona
+     * Sobrecarga del constructor
      */
-    public Persona(String nombre, String apellidos, String fechaNac, String telefono)
+    public Persona(String nombre, String apellidos, String fechaNac, String telefono, String dni)
     {
         this.nombre  = nombre;
         this.apellidos = apellidos;
         this.fechaNacimiento = Util.dateParser(fechaNac);
         this.telefono = telefono;
+        if (dni.equals(""))
+            this.dni = "None";
+        else {
+            this.dni = dni;
+        }    
+        
         
     }
     
+    //guetter y setter
     public String  getNombre()
     {
         return this.nombre;
@@ -67,5 +75,21 @@ public abstract class Persona
         return this.fechaNacimiento;
     }
     
+      public void setDNI(String telefono)
+    {
+        this.telefono = telefono;
+    }
+    
+    public String getDNI() 
+    {
+        return this.dni;
+    }
+    
+    public boolean match(String dni, String nombre, String apellidos)
+    {
+        return (dni.equals(this.getDNI()) || dni.equals(""))
+               && (nombre.equals(this.getNombre()) || nombre.equals(""))
+               && (apellidos.equals(this.getApellidos()) || apellidos.equals(""));
+    }
     
 }

@@ -1,4 +1,4 @@
-import utiles.*;
+import servicios.Datos;
 
 /**
  * Clase principal encargada de abrir la aplicación
@@ -11,7 +11,5 @@ public class Hospital
    public static void main(String args[]){
        //carga datos iniciales
        Datos.inicializar();
-       Menu menu = new Menu(); 
-       //menu.menuPrincipal();
-   }
+    }
 }

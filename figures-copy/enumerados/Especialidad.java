@@ -2,7 +2,7 @@ package enumerados;
 
 
 /**
- * Enumeration class Especialidad - write a description of the enum class here
+ * Enumera las especialidades del hospital
  * 
  * @author (your name here)
  * @version (version number or date here)

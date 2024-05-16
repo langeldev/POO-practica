@@ -10,9 +10,9 @@ import enumerados.TipoEmpleado;
  */
 public class Enfermero extends PersonalMedico
 {
-    
-    public Enfermero(String nombre, String apellidos, String fechaNac, String telefono)
+      
+    public Enfermero(String nombre, String apellidos, String fechaNac, String telefono, String dni)
     {
-        super(nombre, apellidos, fechaNac, telefono, TipoEmpleado.ENFERMERO);
+        super(nombre, apellidos, fechaNac, telefono, dni, TipoEmpleado.ENFERMERO);
     }
 }

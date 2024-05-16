@@ -18,10 +18,10 @@ public abstract class Personal extends Persona
     protected TipoEmpleado cargo;
     /**
      * Constructor for objects of class Empleado
-     */
-    public Personal(String nombre, String apellidos,String fechaNac, String telefono, TipoEmpleado cargo)
+     */  
+    public Personal(String nombre, String apellidos,String fechaNac, String telefono, String dni, TipoEmpleado cargo)
     {
-        super(nombre, apellidos, fechaNac, telefono);
+        super(nombre, apellidos, fechaNac, telefono, dni);
         this.ID = contador++;
         this.cargo = cargo;
     }
@@ -31,7 +31,6 @@ public abstract class Personal extends Persona
         return this.ID;
     }
     
-  
     public Unidad getUnidad()
     {
         return this.unidad;
@@ -50,7 +49,9 @@ public abstract class Personal extends Persona
     
     @Override
     public String toString() {
-        return this.ID + " " + super.getNombre() + " " + super.getApellidos() + " " + this.cargo;
+        return "------------------------------------------------"
+        + "\nID: "+this.ID +  "\nDNI: " + super.getDNI()
+        +"\nNombre: " +super.getNombre() + "\nApellidos: " + super.getApellidos() + "\nCargo: " + this.cargo;
     }
 
 

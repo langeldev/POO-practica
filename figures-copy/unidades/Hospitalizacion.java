@@ -1,20 +1,19 @@
 package unidades;
+
 import java.util.List;
 import java.util.ArrayList;
 
-
 /**
- * Write a description of class Hospitalizacion here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Clase Hospitalizacion es una clase hija de Unidad
+ * necesitaba ampliar metodos para tener habitaciones para los pacientes
+ * y el manejo de estas
  */
 public class Hospitalizacion extends Unidad
 {
 
     private List<Habitacion> habitaciones = new ArrayList<>();
     /**
-     * Constructor for objects of class Hospitalizacion
+     * Constructor Hospitalizacion
      */
     public Hospitalizacion()
     {
@@ -25,10 +24,15 @@ public class Hospitalizacion extends Unidad
         this.habitaciones.add(habitacion);
     }
     
+    /**
+     * Devuelve todas las habitaciones
+     */
     public List<Habitacion> getHabitaciones() {
         return this.habitaciones;
     }
-    
+    /**
+     * Devuelve la habitacion por su identificador
+     */
     public Habitacion getHabitacionPorNumero(int numHabitacion) {
         for (Habitacion habitacion: this.habitaciones) {
             if (numHabitacion == habitacion.getNumber()) {
@@ -36,6 +40,20 @@ public class Hospitalizacion extends Unidad
             }
         }
         return null;
+    }
+    
+    /**
+     * Devuelve una las habitaciones ocupadas por pacientes
+     */
+    public List<Habitacion> getHabiacionesOcupadas()
+    {
+        List<Habitacion> ocupadas = new ArrayList<>();
+        for (Habitacion habitacion: this.habitaciones) {
+            if (habitacion.isOcupada()) {
+                ocupadas.add(habitacion);
+            }
+        }
+        return ocupadas;
     }
 
 }

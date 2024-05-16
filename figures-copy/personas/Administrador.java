@@ -13,9 +13,9 @@ public class Administrador extends PersonalNoMedico
     /**
      * Constructor for objects of class Gerente
      */
-    public Administrador(String nombre, String apellidos,String fechaNac, String telefono)
+    public Administrador(String nombre, String apellidos,String fechaNac, String telefono, String dni)
     {
-        super(nombre, apellidos, fechaNac, telefono,  TipoEmpleado.ADMINISTRADOR);
+        super(nombre, apellidos, fechaNac, telefono,  dni,TipoEmpleado.ADMINISTRADOR);
     }
 
 }

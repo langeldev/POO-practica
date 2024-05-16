@@ -4,23 +4,26 @@ import java.util.ArrayList;
 import java.util.List;
 import java.time.LocalTime;
 import java.time.LocalDate;
+import java.util.Map;
+import java.util.HashMap;
 
-import utiles.Cita;
 import enumerados.TipoEmpleado;
+import servicios.Cita;
+import utiles.Util;
 
 /**
- * Write a description of class PersonalMedico here.
+ * clase PersonalMedico 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * amplia metodos para el personal sanitario
+ * 
  */
 public abstract class PersonalMedico extends Personal
 {
-      private ArrayList<Cita> agenda;
-
-    public PersonalMedico(String nombre, String apellidos, String fechaNac, String telefono, TipoEmpleado cargo)
+    private ArrayList<Cita> agenda;
+  
+    public PersonalMedico(String nombre, String apellidos, String fechaNac, String telefono,String dni, TipoEmpleado cargo)
     {
-        super(nombre, apellidos, fechaNac, telefono, cargo);
+        super(nombre, apellidos, fechaNac, telefono, dni,cargo);
         this.agenda = null;
     }
 
@@ -34,29 +37,42 @@ public abstract class PersonalMedico extends Personal
         this.agenda = agenda;
     }
     
+    public void createAgenda()
+    {
+        this.agenda = new ArrayList<>();
+    }
+       
     public void deleteAgenda() 
     {
         this.agenda = null; 
     }
     
+    /**
+     * Agrega cita a la agenda
+     */
     public void addCita(Cita cita){
         this.agenda.add(this.agenda.size(), cita);
     }
     
     public void printCitasFecha(LocalDate fecha)
     {
+        System.out.println("Citas de " + this.getNombre() + " para el dia " + fecha);
+        boolean noCoincidencia = true;
         for (Cita cita: this.agenda) {           
             if(fecha.equals(cita.getFecha()))
             {
-                 System.out.println(cita.toString());
+                noCoincidencia = false;
+                System.out.println(cita.toString());
             }
         }
+        if (noCoincidencia) {System.out.println("No hay citas para ese dia");}
     }
     
     /**
-     * metodo que comprueba si existe la hora esta ocupada
-     * @params fecha
-     * @return true si está encuentra coincidencia de fecha y hora
+     * metodo que comprueba si existe la hora esta ocupada en la agenda
+     * @param fecha
+     * @param hora
+     * @return true si coincide con otra cita
      */
     public boolean citaOcupada(String fecha, String hora) 
     {
@@ -66,9 +82,9 @@ public abstract class PersonalMedico extends Personal
         return false;
     }
     
-    public void actualizarExpediente(Paciente p, String s)
-    {
-        p.addExpediente(s);
+    @Override
+    public String toString() {
+        return super.toString();
     }
     
 }

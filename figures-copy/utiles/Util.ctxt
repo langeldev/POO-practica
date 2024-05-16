@@ -9,6 +9,7 @@ comment2.target=java.lang.String\ getUserText()
 comment2.text=\r\n\ Recoge\ la\ informacion\ del\ usuario\r\n
 comment3.params=date
 comment3.target=java.time.LocalDate\ dateParser(java.lang.String)
+comment3.text=\r\n\ Cambia\ el\ tipo\ del\ dato\ \r\n\ @param\ String\ fecha\r\n
 comment4.params=hour
 comment4.target=java.time.LocalTime\ hourParser(java.lang.String)
 numComments=5
