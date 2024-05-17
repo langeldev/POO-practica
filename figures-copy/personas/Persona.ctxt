@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Persona
-comment0.text=\r\n\ Clase\ base\ sobre\ la\ que\ construir\ nuevas\ clase\ que\ cumplan\r\n\ los\ distintos\ roles\ de\ la\ aplicacion\r\n
+comment0.text=\r\n\ Clase\ Persona\r\n\ superclase\ que\ almacena\ toda\ la\ informacion\ personal\r\n
 comment1.params=
 comment1.target=Persona()
 comment10.params=telefono
@@ -9,6 +9,7 @@ comment11.params=
 comment11.target=java.lang.String\ getDNI()
 comment12.params=dni\ nombre\ apellidos
 comment12.target=boolean\ match(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment12.text=\r\n\ Compara\ si\ los\ datos\ de\ la\ instancia\ cumple\ con\ criterios\ externos\r\n
 comment2.params=nombre\ apellidos\ fechaNac\ telefono\ dni
 comment2.target=Persona(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
 comment2.text=\r\n\ Sobrecarga\ del\ constructor\r\n

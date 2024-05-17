@@ -4,10 +4,10 @@ import unidades.Unidad;
 import enumerados.TipoEmpleado;
 
 /**
- * Write a description of class Empleado here.
+ * Clase Personal
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Es la encargada de almacenar la informacion de los empleados del hospital
+ * como la unidad en la que trabaja o su cargo
  */
 public abstract class Personal extends Persona
 {
@@ -25,7 +25,7 @@ public abstract class Personal extends Persona
         this.ID = contador++;
         this.cargo = cargo;
     }
-    
+    //getters y setters
     public int getID()
     {
         return this.ID;

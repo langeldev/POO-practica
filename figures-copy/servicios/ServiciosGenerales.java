@@ -70,7 +70,7 @@ public class ServiciosGenerales
         
     }
     
-       /**
+    /**
      * Hospitaliza a un paciente
      */
     public static void hospitalizar(Paciente paciente,  Habitacion hab) {

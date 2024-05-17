@@ -4,11 +4,8 @@ package personas;
 /**
  * Clase Estudiante
  * 
- * La clase estudiante es desdendiente de Persona y tiene que tener asignado
- * un tutor al que acompañar a sus citas
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * La clase estudiante es subclase de Persona y tiene que tener asignado un tutor y un identificador unico de estudiantes
+ * El estudiante acompañara al tutor a donde se le asigne para llevar a cabo su plan de estudios
  */
 public class Estudiante extends Persona
 {
@@ -22,7 +19,7 @@ public class Estudiante extends Persona
         this.ID = contador++;
         this.empleadoAsignado = empleado;
     }
-    
+    //getters y setters
     public int getID()
     {
         return this.ID;

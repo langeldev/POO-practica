@@ -4,11 +4,11 @@ package personas;
 import java.util.Date;
 import java.time.LocalDate;
 
-import utiles.*;
+import utiles.Util;
 
 /**
- * Clase base sobre la que construir nuevas clase que cumplan
- * los distintos roles de la aplicacion
+ * Clase Persona
+ * superclase que almacena toda la informacion personal
  */
 public abstract class Persona
 {
@@ -35,8 +35,6 @@ public abstract class Persona
         else {
             this.dni = dni;
         }    
-        
-        
     }
     
     //guetter y setter
@@ -85,6 +83,9 @@ public abstract class Persona
         return this.dni;
     }
     
+    /**
+     * Compara si los datos de la instancia cumple con criterios externos
+     */
     public boolean match(String dni, String nombre, String apellidos)
     {
         return (dni.equals(this.getDNI()) || dni.equals(""))

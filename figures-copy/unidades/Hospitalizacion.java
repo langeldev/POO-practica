@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.ArrayList;
 
 /**
- * Clase Hospitalizacion es una clase hija de Unidad
+ * Clase Hospitalizacion es una subclase de Unidad
  * necesitaba ampliar metodos para tener habitaciones para los pacientes
- * y el manejo de estas
+ * y poder gestionarlas
  */
 public class Hospitalizacion extends Unidad
 {
@@ -30,6 +30,7 @@ public class Hospitalizacion extends Unidad
     public List<Habitacion> getHabitaciones() {
         return this.habitaciones;
     }
+    
     /**
      * Devuelve la habitacion por su identificador
      */

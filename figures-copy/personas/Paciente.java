@@ -6,10 +6,10 @@ import unidades.Habitacion;
 import servicios.Cita;
 
 /**
- * Write a description of class Paciente here.
+ * Clase Paciente.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Guarda la informacion de del paciente, guarda sus citas, su expediente medico   
+ * y si actualmente está ingresado 
  */
 public class Paciente extends Persona
 {
@@ -44,17 +44,26 @@ public class Paciente extends Persona
     {
         return this.habitacion;
     }
-    
+  
+    /**
+     * devuelve true si el paciente está en una habitacion
+     */
     public boolean isHospitalizado()
     {
         return this.habitacion != null;
     }
     
+    /**
+     * Saca al paciente de la habitacion
+     */
     public void darAlta()
     {
         this.habitacion = null;
     }
     
+    /**
+     * Expediente medico del paciente
+     */
     public List<String> getExpediente()
     {
         return this.expediente;
@@ -64,10 +73,13 @@ public class Paciente extends Persona
     {
         this.expediente.add(historial);
     }
-    
+    /**
+     * Imprime el expediente del paciente
+     */
     public void printExpediente() 
     {
         for (String text: this.expediente) {
+            System.out.println("------------------------------------");
             System.out.println(text);
         }
     }
@@ -77,6 +89,9 @@ public class Paciente extends Persona
         return this.citas;
     }
     
+    /**
+     * Agrega cita
+     */
     public void addCita(Cita cita){
         this.citas.add(this.citas.size(), cita);
     }
@@ -89,6 +104,9 @@ public class Paciente extends Persona
         }
     }
     
+    /**
+     * Busca la cita de un paciente por fecha y hora
+     */
     public Cita getCita(String fecha, String hora)
     {
         for (Cita cita: this.citas) {

@@ -4,10 +4,10 @@ import enumerados.Especialidad;
 import personas.Paciente;
 
 /**
- * Write a description of class Habitacion here.
+ * Clase Habitacion
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * contiene un identificador, almacena un paciente cuando necesita ser ingresado 
+ * y hay habitaciones que estan adaptada a la unidad de especialidad del hospital
  */
 public class Habitacion
 {
@@ -16,7 +16,7 @@ public class Habitacion
     private Especialidad esp;
 
     /**
-     * Constructor for objects of class Habitacion
+     * Constructor Habitacion
      */
     public Habitacion(int num)
     {
@@ -24,7 +24,10 @@ public class Habitacion
          this.paciente = null;
          this.esp = null;
     }
-    
+
+    /**
+     * Sobrecarga de constructor en caso de tener especialidad
+     */
     public Habitacion(int num, Especialidad esp)
     {
          this.num = num;
@@ -32,6 +35,7 @@ public class Habitacion
          this.esp = esp;
     }
     
+    //getters y setters
     public int getNumber()
     {
         return this.num;
@@ -42,24 +46,15 @@ public class Habitacion
         this.num = num;
     }
     
-    public boolean isOcupada()
-    {
-        return this.paciente != null;
-    }
-    
-    public void ingresarPaciente(Paciente paciente)
-    {
-        this.paciente = paciente;
-    }
-    
-    public void desocupar()
-    {
-        this.paciente = null;
-    }
-    
     public Paciente getPaciente() 
     {
         return this.paciente;
+    }
+    
+    //setter paciente me parecia mas humano llamaro ingresar
+    public void ingresarPaciente(Paciente paciente)
+    {
+        this.paciente = paciente;
     }
     
     public Especialidad getEspecialidad()
@@ -70,6 +65,18 @@ public class Habitacion
     public void setEspecialidad(Especialidad esp)
     {
         this.esp = esp;
+    }
+    
+    //comprueba que la habitacion est ocupada 
+    public boolean isOcupada()
+    {
+        return this.paciente != null;
+    }
+    
+    // elimina al paciente de la habitacion
+    public void desocupar()
+    {
+        this.paciente = null;
     }
     
 }

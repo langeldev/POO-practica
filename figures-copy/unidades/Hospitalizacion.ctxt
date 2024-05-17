@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Hospitalizacion
-comment0.text=\r\n\ Clase\ Hospitalizacion\ es\ una\ clase\ hija\ de\ Unidad\r\n\ necesitaba\ ampliar\ metodos\ para\ tener\ habitaciones\ para\ los\ pacientes\r\n\ y\ el\ manejo\ de\ estas\r\n
+comment0.text=\r\n\ Clase\ Hospitalizacion\ es\ una\ subclase\ de\ Unidad\r\n\ necesitaba\ ampliar\ metodos\ para\ tener\ habitaciones\ para\ los\ pacientes\r\n\ y\ poder\ gestionarlas\r\n
 comment1.params=
 comment1.target=Hospitalizacion()
 comment1.text=\r\n\ Constructor\ Hospitalizacion\r\n
