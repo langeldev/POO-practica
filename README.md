@@ -1,0 +1,2 @@
+Trabajo para la asignatura Programacion Orientada a Objetos, consisite en un sistema de gestion de un Hopsital universitario, desarrollado en Java y con BlueJ como requisito del temario dado durante el curso.
+La aplicacion debía tener un CRUD para las entidades de PACIENTE, ESTUDIANTE y PERSONAL y la capacidad de dar citas a los pacientes y añadirla a la agenda de los sanitarios y al expediente del  paciente.
