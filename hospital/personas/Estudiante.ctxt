@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Estudiante
+comment0.text=\r\n\ Clase\ Estudiante\r\n\ \r\n\ La\ clase\ estudiante\ es\ subclase\ de\ Persona\ y\ tiene\ que\ tener\ asignado\ un\ tutor\ y\ un\ identificador\ unico\ de\ estudiantes\r\n\ El\ estudiante\ acompa\u00F1ara\ al\ tutor\ a\ donde\ se\ le\ asigne\ para\ llevar\ a\ cabo\ su\ plan\ de\ estudios\r\n
+comment1.params=nombre\ apellidos\ fechaNac\ telefono\ dni\ empleado
+comment1.target=Estudiante(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ PersonalMedico)
+comment2.params=
+comment2.target=int\ getID()
+comment2.text=\r\n\ Obtiene\ el\ identificador\ de\ acceso\ al\ estudiante\r\n\ @return\ int\ ID\r\n
+comment3.params=
+comment3.target=PersonalMedico\ getEmpleadoAsignado()
+comment3.text=\r\n\ Devuelve\ el\ tutor\ asignado\ al\ estudiante\r\n\ @return\ PersonalMedico\r\n
+comment4.params=empleado
+comment4.target=void\ setEmpleadoAsignado(PersonalMedico)
+comment4.text=\r\n\ Cambia\ el\ tutor\ asignado\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

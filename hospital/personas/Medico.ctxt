@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Medico
+comment0.text=\r\n\ Clase\ Medico\r\n\ \r\n\ crea\ la\ instancia\ del\ personal\ de\ medicina,\r\n\ esta\ clase\ se\ hereda\ de\ PersonalMedico,\ los\ medicos\ tienen\ especialidades\ y\ diferentes\ responsabilidades\r\n\ respecto\ a\ otros\ miembros\ del\ personal\ \r\n
+comment1.params=nombre\ apellidos\ fechaNac\ telefono\ dni
+comment1.target=Medico(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ Medico\r\n
+comment2.params=
+comment2.target=enumerados.Especialidad\ getEspecialidad()
+comment3.params=esp
+comment3.target=void\ setEspecialidad(enumerados.Especialidad)
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ Metodo\ de\ sobreescritura\r\n
+numComments=5

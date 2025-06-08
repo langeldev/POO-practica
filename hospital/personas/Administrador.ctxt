@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Administrador
+comment0.text=\r\n\ Clase\ Administrador\r\n\ \r\n\ Instancia\ la\ informacion\ de\ un\ administrador\ del\ hospital,\ este\ puede\ tener\ funcione\ como\ crear\ facturas\r\n\ dar\ citas\ y\ demas.\ Hereda\ de\ PersonalNoMedico\r\n
+comment1.params=nombre\ apellidos\ fechaNac\ telefono\ dni
+comment1.target=Administrador(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ Administrador\r\n
+numComments=2

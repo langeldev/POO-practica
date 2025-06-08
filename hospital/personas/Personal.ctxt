@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Personal
+comment0.text=\r\n\ Clase\ Personal\r\n\ \r\n\ Es\ la\ encargada\ de\ almacenar\ la\ informacion\ de\ los\ empleados\ del\ hospital\r\n\ como\ la\ unidad\ en\ la\ que\ trabaja\ o\ su\ cargo\r\n
+comment1.params=nombre\ apellidos\ fechaNac\ telefono\ dni\ cargo
+comment1.target=Personal(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ enumerados.TipoEmpleado)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Empleado\r\n
+comment2.params=
+comment2.target=int\ getID()
+comment3.params=
+comment3.target=unidades.Unidad\ getUnidad()
+comment4.params=unidad
+comment4.target=void\ setUnidad(unidades.Unidad)
+comment5.params=
+comment5.target=enumerados.TipoEmpleado\ getCargo()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ Sobrescribe\ los\ datos\ de\ la\ clase\ base\ Persona\ agregando\ el\ cargo\ y\ el\ identificador\ de\ acceso\ al\ empleado\r\n
+numComments=7

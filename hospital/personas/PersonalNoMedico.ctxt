@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=PersonalNoMedico
+comment0.text=\r\n\ Clase\ PersonaNoMedico\r\n\ \r\n\ Separa\ las\ responsabilidades\ del\ las\ que\ tiene\ PersonalMedico\r\n\ este\ podr\u00EDa\ elaborar\ informes\r\n
+comment1.params=nombre\ apellidos\ fechaNac\ telefono\ dni\ cargo
+comment1.target=PersonalNoMedico(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ enumerados.TipoEmpleado)
+comment1.text=\r\n\ Constructor\ PersonalNoMedico\r\n
+numComments=2

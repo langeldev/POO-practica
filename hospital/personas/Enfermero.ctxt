@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Enfermero
+comment0.text=\r\n\ Clase\ Enfermero\r\n\ \r\n\ contiene\ la\ instancia\ del\ personal\ de\ enfermeria\r\n\ hereda\ de\ PersonalMedico\ y\ mantiene\ todas\ las\ propiedades\ y\ funcionalidades\r\n
+comment1.params=nombre\ apellidos\ fechaNac\ telefono\ dni
+comment1.target=Enfermero(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+numComments=2

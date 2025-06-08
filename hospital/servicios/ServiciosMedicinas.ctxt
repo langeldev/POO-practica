@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ServiciosMedicinas
+comment0.text=\r\n\ Clase\ ServiciosMedicinas\ \r\n\ \r\n\ esta\ clase\ contiene\ las\ herramientas\ que\ usan\ los\ medicos\ para\ actualziar\ el\ expediente\ del\ paciente\r\n
+comment1.params=paciente\ nota
+comment1.target=void\ actualizarExpediente(personas.Paciente,\ java.lang.String)
+comment1.text=\r\n\ agrega\ una\ nota\ al\ historico\ del\ expediente\r\n\ @param\ Paciente\ paciente\ que\ se\ quiere\ actualizar\r\n\ @param\ String\ nota\ anotacion\ que\ se\ quiere\ agregar\ al\ expediente\r\n
+numComments=2
